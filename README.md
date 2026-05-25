@@ -1,35 +1,20 @@
-# Apex Fitness — White Page
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+</div>
 
-A dark, premium fitness blog website built as a single HTML file.
-Designed as a compliant white page for ad campaign traffic filtering.
+# Run and deploy your AI Studio app
 
-## Overview
+This contains everything you need to run your app locally.
 
-Apex Fitness is a general fitness and workout blog featuring articles,
-workout categories, testimonials, newsletter signup, and a contact form.
-Built with pure HTML, CSS, and vanilla JavaScript — no dependencies.
+View your app in AI Studio: https://ai.studio/apps/29131882-c1ea-46de-a3b0-ff4c86c4ddba
+
+## Run Locally
+
+**Prerequisites:**  Node.js
 
 
-
-## Tech Stack
-
-- HTML5
-- CSS3 (inline)
-- Vanilla JavaScript (inline)
-- Google Fonts (Montserrat, Inter)
-- Unsplash images (via URL)
-
-## File Structure
-/
-├── site.html        # Main white page file
-
-## Notes
-
-- This is a static site — no backend or database required
-- Contact form uses a fake JS success message (no emails sent)
-- All assets loaded via external URLs (Unsplash, Google Fonts)
-
-## License
-
-For internal use only. Not for redistribution.
-
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`

@@ -1,0 +1,6 @@
+{
+  "name": "Apex Fitness Blog",
+  "description": "A premium, dark-themed fitness blog built as a single HTML file.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
