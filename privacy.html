@@ -823,6 +823,40 @@
             }
         }
     </style>
+
+    <style>
+        .page-content {
+            padding: 10rem 5% 5rem;
+            max-width: 900px;
+            margin: 0 auto;
+            min-height: 70vh;
+        }
+        .page-content h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 2rem;
+            color: var(--accent-green);
+        }
+        .page-content h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        .page-content p {
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+            font-size: 1.1rem;
+        }
+        .page-content ul {
+            list-style: disc;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            color: #d0d0d0;
+        }
+        .page-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -830,217 +864,46 @@
     <nav class="navbar" id="navbar">
         <a href="#home" class="logo">APEX<span>FIT</span></a>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#workouts">Workouts</a></li>
-            <li><a href="#articles">Nutrition</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/site.html#home">Home</a></li>
+            <li><a href="/site.html#workouts">Workouts</a></li>
+            <li><a href="/site.html#articles">Nutrition</a></li>
+            <li><a href="/site.html#about">About</a></li>
+            <li><a href="/site.html#contact">Contact</a></li>
         </ul>
         <button class="hamburger" id="hamburger-btn">☰</button>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <h1>Train Hard.<br>Live Stronger.</h1>
-            <p>Your ultimate guide to fitness, workouts, and a healthier lifestyle. Push your limits and discover what you're truly capable of.</p>
-            <div class="hero-buttons">
-                <a href="#workouts" class="btn btn-primary">Start Training</a>
-                <a href="#articles" class="btn btn-outline">Explore Articles</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Stats Section -->
-    <section class="stats-section" id="about">
-        <div class="stats-grid">
-            <div class="stat-card">
-                <span class="stat-num" data-target="500" data-suffix="+">0</span>
-                <span class="stat-label">Workouts</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-num" data-target="120" data-suffix="K+">0</span>
-                <span class="stat-label">Members</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-num" data-target="50" data-suffix="+">0</span>
-                <span class="stat-label">Expert Trainers</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-num" data-target="10" data-suffix="+">0</span>
-                <span class="stat-label">Years Experience</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Articles Section -->
-    <section class="articles-section" id="articles">
-        <div class="section-header">
-            <h2 class="section-title">Latest From The Blog</h2>
-        </div>
-        <div class="articles-grid">
-            <!-- Article 1 -->
-            <article class="article-card">
-                <div class="article-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Strength Training" class="article-img">
-                </div>
-                <div class="article-content">
-                    <span class="article-tag">Strength</span>
-                    <h3 class="article-title">5 Best Compound Exercises for Full Body Strength</h3>
-                    <p class="article-desc">Master the fundamental lifts that will trigger massive muscle growth and build functional, real-world power...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="article-card">
-                <div class="article-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="Morning Workout" class="article-img">
-                </div>
-                <div class="article-content">
-                    <span class="article-tag">Cardio</span>
-                    <h3 class="article-title">How to Build a Morning Workout Routine That Sticks</h3>
-                    <p class="article-desc">Struggling to wake up? Learn the psychological tricks to make early morning training an effortless daily habit...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="article-card">
-                <div class="article-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Recovery" class="article-img">
-                </div>
-                <div class="article-content">
-                    <span class="article-tag">Recovery</span>
-                    <h3 class="article-title">The Truth About Rest Days: Why Recovery Matters</h3>
-                    <p class="article-desc">More isn't always better. Discover why your rest days are actually when the real muscle growth and adaptation happen...</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Workout Categories Section -->
-    <section class="categories-section" id="workouts">
-        <div class="section-header">
-            <h2 class="section-title">Explore Workouts</h2>
-        </div>
-        <div class="categories-grid">
-            <div class="category-box">
-                <span class="cat-icon">🏋️‍♂️</span>
-                <h3 class="cat-title">Strength Training</h3>
-                <p class="cat-desc">Build muscle mass and raw power with heavy lifting and structured progressive overload routines.</p>
-            </div>
-            <div class="category-box">
-                <span class="cat-icon">⚡</span>
-                <h3 class="cat-title">HIIT</h3>
-                <p class="cat-desc">High-intensity interval training designed to maximize calorie burn in minimum time.</p>
-            </div>
-            <div class="category-box">
-                <span class="cat-icon">🧘‍♀️</span>
-                <h3 class="cat-title">Yoga & Flexibility</h3>
-                <p class="cat-desc">Improve mobility, prevent injuries, and build a strong core with guided active recovery flows.</p>
-            </div>
-            <div class="category-box">
-                <span class="cat-icon">🔥</span>
-                <h3 class="cat-title">Cardio Burn</h3>
-                <p class="cat-desc">Boost endurance and cardiovascular health with steady-state and advanced cardio strategies.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section" id="testimonials">
-        <div class="section-header">
-            <h2 class="section-title">What Our Community Says</h2>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testi-card">
-                <div class="stars">★★★★★</div>
-                <p class="testi-quote">"The workout plans on APEX completely transformed my approach to lifting. I broke through a 6-month plateau in just four weeks."</p>
-                <div class="testi-author">
-                    <div class="author-avatar">JD</div>
-                    <div class="author-info">
-                        <h4>John Doe</h4>
-                        <p>Powerlifter</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="stars">★★★★★</div>
-                <p class="testi-quote">"As someone who struggles with meal prep, the nutrition guides and macro breakdowns have been an absolute lifesaver for my fat loss journey."</p>
-                <div class="testi-author">
-                    <div class="author-avatar">SS</div>
-                    <div class="author-info">
-                        <h4>Sarah Smith</h4>
-                        <p>Fitness Enthusiast</p>
-                    </div>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="stars">★★★★★</div>
-                <p class="testi-quote">"The premium feel of this site matches the high-quality advice. No fluff, just science-backed training protocols that actually work."</p>
-                <div class="testi-author">
-                    <div class="author-avatar">MJ</div>
-                    <div class="author-info">
-                        <h4>Mike Johnson</h4>
-                        <p>CrossFit Athlete</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section" id="newsletter">
-        <div class="newsletter-content">
-            <h2>Get Free Workout Plans</h2>
-            <p>Join 120,000+ fitness enthusiasts and get weekly training tips, nutrition advice, and exclusive challenges delivered straight to your inbox.</p>
-            <form class="subscribe-form" onsubmit="event.preventDefault();">
-                <input type="email" class="subscribe-input" placeholder="Enter your email address" required>
-                <button type="submit" class="btn btn-primary">Subscribe Now</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="section-header">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">Have questions about your fitness journey? We'd love to help.</p>
-        </div>
-        <div class="contact-container">
-            <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <select id="subject" class="form-control" required>
-                        <option value="" disabled selected>Select a subject</option>
-                        <option value="general">General Inquiry</option>
-                        <option value="workouts">Workout Plans</option>
-                        <option value="nutrition">Nutrition Advice</option>
-                        <option value="partnership">Partnership</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="form-control" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                <div id="contact-success" class="success-message">Thanks! We'll get back to you within 24 hours.</div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
+    
+    <main class="page-content">
+        <h1>Privacy Policy</h1>
+        <p><strong>Last Updated: June 2025</strong></p>
+        
+        <h2>1. Information We Collect</h2>
+        <p>We collect information that you provide directly to us, such as when you subscribe to our newsletter, fill out a contact form, or interact with our community features. The types of personal information we may collect include your name, email address, and any other information you choose to provide.</p>
+        
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Provide, maintain, and improve our services.</li>
+            <li>Send you technical notices, updates, security alerts, and support messages.</li>
+            <li>Respond to your comments, questions, and customer service requests.</li>
+            <li>Communicate with you about products, services, offers, and events provided by Apex Fitness.</li>
+        </ul>
+        
+        <h2>3. Information Sharing</h2>
+        <p>We do not share your personal information with third parties except as described in this privacy policy or as required by law. We may share information with service providers who perform services on our behalf, such as email delivery and hosting services.</p>
+        
+        <h2>4. Security</h2>
+        <p>Apex Fitness takes reasonable measures to help protect information about you from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction.</p>
+        
+        <h2>5. Cookies</h2>
+        <p>We use cookies and similar tracking technologies to track activity on our service and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+        
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us via the form on our homepage.</p>
+    </main>
+<footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
                 <h2>APEX<span>FIT</span></h2>
@@ -1054,10 +917,10 @@
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#articles">Latest Articles</a>
-                    <a href="#testimonials">Success Stories</a>
-                    <a href="#about">About Us</a>
+                    <a href="/site.html#home">Home</a>
+                    <a href="/site.html#articles">Latest Articles</a>
+                    <a href="/site.html#testimonials">Success Stories</a>
+                    <a href="/site.html#about">About Us</a>
                 </div>
             </div>
             <div class="footer-col">
